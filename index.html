@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalMarketHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">LocalMarketHub</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shops</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for shops or products...">
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <h1>Welcome to LocalMarketHub</h1>
+        <p>Your go-to platform for discovering local shops and supporting community commerce.</p>
+        <button onclick="alert('Start Shopping!')">Start Shopping</button>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <h2>Explore Local Shops</h2>
+        <div class="shop-container" id="shopContainer"></div>
+    </section>
+    <section class="product-section" id="productSection" style="display: none;">
+        <h2>Shop Products</h2>
+        <div class="product-container" id="productContainer"></div>
+    </section>
+    <!-- Add "Back to Shops" button to product section -->
+<section class="product-section" id="productSection" style="display: none;">
+    <h2>Shop Products</h2>
+    <button id="backToShops" onclick="backToShops()">Back to Shops</button>
+    <div class="product-container" id="productContainer"></div>
+</section>
+    <!-- Order Form Modal -->
+<div id="orderFormModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeOrderForm()">&times;</span>
+        <h2>Order Product</h2>
+        <p id="orderProductName"></p>
+        <form id="orderForm" onsubmit="submitOrder(event)">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            <label for="phone ">Phone Number</label>
+            <textarea id="phone" name="phone" rows="1" required></textarea>
+
+            <button type="submit">Confirm Order</button>
+        </form>
+    </div>
+</div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 LocalMarketHub. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

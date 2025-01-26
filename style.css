@@ -1,0 +1,267 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+header .search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: #fff;
+}
+.banner h1 {
+    font-size: 2.5rem;
+}
+.banner p {
+    margin: 10px 0 20px;
+}
+.banner button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #4CAF50;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Shop Section */
+.shop-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.shop-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.shop-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+.shop-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.shop-card h3 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+.shop-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+.shop-card button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #fff;
+}
+.footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+/* Product Section */
+.product-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.product-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.product-card h4 {
+    font-size: 1.15rem;
+    margin: 10px 0;
+}
+.product-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+.product-card button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.product-card button:hover {
+    background-color: #45a049;
+}
+/* Modal Background */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Order Form Inputs */
+#orderForm label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#orderForm input,
+#orderForm textarea,
+#orderForm button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#orderForm button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#orderForm button:hover {
+    background-color: #45a049;
+}
+/* Highlighted search result */
+.shop-card.highlight {
+    background-color: #81C784;
+    transition: background-color 0.3s ease;
+}
+
+/* Back to Shops button */
+#backToShops {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#backToShops:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shop-container, .product-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .shop-card, .product-card {
+        width: 100%;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    header .search-bar {
+        margin-top: 10px;
+    }
+}
+
+
